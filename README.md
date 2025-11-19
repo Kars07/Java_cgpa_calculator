@@ -9,7 +9,6 @@ A Spring Boot REST API for calculating Cumulative Grade Point Average (CGPA) bas
 - Calculate overall CGPA across all semesters
 - Calculate semester-specific GPA
 - Filter courses by semester
-- In-memory H2 database for easy testing
 
 ## Grade Point System
 
