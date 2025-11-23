@@ -78,6 +78,15 @@ rest-grpc-demo/
 
 ### Build and Run
 
+Install "mvn" on Ubuntu(WSL):
+```bash
+sudo apt update
+sudo apt install maven - #this is the namme of the package
+
+# Check the Version for confirmation
+mvn -version
+```
+
 ```bash
 # Build the project
 mvn clean install
