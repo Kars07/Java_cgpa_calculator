@@ -1,0 +1,26 @@
+services:
+  # Spring Boot Backend
+  - type: web
+    name: lasu-cgpa-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon # Choose your preferred region
+    
+    # Environment variables
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: JAVA_OPTS
+        value: "-Xmx512m -Xms256m"
+    
+    # Health check endpoint
+    healthCheckPath: /actuator/health
+    
+    # Auto-deploy on push to main branch
+    autoDeploy: true
+    
+    # Build command (optional, Docker will handle this)
+    # buildCommand: mvn clean package -DskipTests
