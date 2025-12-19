@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Plus, Trash2, TrendingUp, Target, Download, BarChart3, Moon, Sun, Calculator, BookOpen, Award, PieChart, HelpCircle, RefreshCw, AlertCircle, Check, Menu, X } from 'lucide-react';
 import { LineChart, Line, BarChart, Bar, PieChart as RePieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-const API_URL = 'http://localhost:8080/api/courses';
+const API_URL = 'https://java-cgpa-calculator.onrender.com/api/courses';
 
 const GRADING_SYSTEMS = {
   'LASU (5.0)': { A: 5.0, B: 4.0, C: 3.0, D: 2.0, E: 1.0, F: 0.0 }
